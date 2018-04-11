@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
 
-import SearchReducer from './Components/Landing/reducer';
-
+import ThumbnilReducer from './Components/Landing/reducer';
+import UserStatusReducer from './Components/AppWrapper/reducer';
 export default combineReducers({
-  SearchReducer
+  ThumbnilReducer,
+  UserStatusReducer
 });

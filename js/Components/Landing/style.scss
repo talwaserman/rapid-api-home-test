@@ -1,3 +1,33 @@
 .landing {
+    &.welcome-message, &.guest-message {
+        h1 {
+            color: #fff;
+            text-align: center;
+            margin-top: 50px;
+        }
 
+        a {
+            color: lightblue;
+        }
+    }
+
+    &.guest-message {
+        text-align: center;
+    }
+
+    .handle {
+        background: #Fff;
+        padding: 10px 20px;
+        border-radius: 3px;
+        font-weight: bold;
+        display: inline-block;
+
+        &:hover {
+            cursor: move;
+        }
+    }
+
+    .draggable-item {
+        display: inline-block;
+    }
 }

@@ -1,30 +1,20 @@
 // Action creators
-import * as ACTION from './consts';
+import * as ACTION from  './consts';
 
-export const setSearchTerm = searchTerm => ({
-  type: ACTION.SET_SEARCH_TERM,
-  payload: searchTerm
-});
-
-export const clearSearchTerm = searchTerm => ({
-  type: ACTION.CLEAR_SEARCH_TERM,
-  payload: searchTerm
-});
-
-// with thunk
-export const getAllMovies = () => {
+export const saveDragLocation = (data) => {
   return dispatch => {
-    return fetchMovies().then(
-      response => response.json().then(json => {
-        dispatch({
-          type: ACTION.GET_ALL_MOVIES,
-          payload: json
-        })
-      })
-    )
+    dispatch({
+      type: ACTION.SAVE_DRAGE_LOCATION,
+      payload: data
+    })
   }
 }
 
-const fetchMovies = () => {
-  return fetch('http://localhost:3000/all',{method:'GET'});
+export const getDragLocation = () => {
+  return dispatch => {
+    dispatch({
+      type: ACTION.GET_DRAGE_LOCATION,
+      payload: null
+    })
+  }
 }

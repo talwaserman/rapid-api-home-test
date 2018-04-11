@@ -1,5 +1,7 @@
+import AppWrapper from './AppWrapper';
 import Landing from './Landing';
-import Search from './Search';
-import ShowCard from './ShowCard';
+import Header from './Header';
+import Login from './Login';
+import Register from  './Register';
 
-export { Landing, Search, ShowCard };
+export { AppWrapper, Landing, Header, Login, Register };
