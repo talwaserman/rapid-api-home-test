@@ -1,8 +1,8 @@
 Arguments: 
-  c:\Program Files\nodejs\node.exe c:\Program Files (x86)\Yarn\bin\yarn.js dev
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js test
 
 PATH: 
-  c:\Users\talwa_000\bin;.;C:\Program Files (x86)\Git\local\bin;C:\Program Files (x86)\Git\mingw\bin;C:\Program Files (x86)\Git\bin;c:\ProgramData\Oracle\Java\javapath;c:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;c:\Program Files (x86)\Intel\iCLS Client\;c:\Program Files\Intel\iCLS Client\;c:\Windows\system32;c:\Windows;c:\Windows\System32\Wbem;c:\Windows\System32\WindowsPowerShell\v1.0\;c:\Program Files (x86)\Windows Live\Shared;c:\Program Files\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;c:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;c:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;c:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64 ;c:\glassfish3\jdk\bin;c:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\Git\cmd;c:\ant\apache-ant-1.9.4\bin;c:\Users\talwa_000\Desktop\adt-bundle-windows-x86_64-20131030\sdk\tools;c:\Users\talwa_000\Desktop\adt-bundle-windows-x86_64-20131030\sdk\platform-tools;c:\Program Files\Perforce;c:\Program Files (x86)\Yarn\bin\;c:\Program Files\Git\cmd;c:\Program Files\nodejs\;c:\RailsInstaller\Git\cmd;c:\RailsInstaller\Ruby2.1.0\bin;c:\Users\talwa_000\AppData\Local\atom\bin;c:\Program Files\Microsoft VS Code\bin;c:\Users\talwa_000\AppData\Local\Yarn\bin;c:\Users\talwa_000\AppData\Roaming\npm
+  C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x86;C:\Program Files (x86)\Intel\OpenCL SDK\2.0\bin\x64 ;C:\glassfish3\jdk\bin;C:\Program Files (x86)\Heroku\bin;C:\Program Files (x86)\git\cmd;C:\ant\apache-ant-1.9.4\bin;C:\Users\talwa_000\Desktop\adt-bundle-windows-x86_64-20131030\sdk\tools;C:\Users\talwa_000\Desktop\adt-bundle-windows-x86_64-20131030\sdk\platform-tools;C:\Program Files\Perforce;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\RailsInstaller\Git\cmd;C:\RailsInstaller\Ruby2.1.0\bin;C:\Users\talwa_000\AppData\Local\atom\bin;C:\Program Files\Microsoft VS Code\bin;C:\Users\talwa_000\AppData\Local\Yarn\bin;C:\Users\talwa_000\AppData\Roaming\npm
 
 Yarn version: 
   1.5.1
@@ -19,7 +19,7 @@ npm manifest:
       "api": "node ratingsAPI.js",
       "build": "webpack",
       "dev": "webpack-dev-server",
-      "format": "prettier --write --single-quote --print-width=120 --parser=flow --tab-width=2 \"js/**/*.{js,jsx}\"",
+      "format": "prettier --write --single-quote --print-width=120 --tab-width=2 \"js/**/*.{js,jsx}\"",
       "test": "jest",
       "test:coverage": "jest --coverage",
       "test:update": "jest -u",
@@ -38,15 +38,14 @@ npm manifest:
       "compression": "1.6.2",
       "cors": "2.8.3",
       "express": "4.15.3",
+      "jest-cli": "^22.4.3",
       "lodash": "4.17.4",
-      "preact": "8.1.0",
-      "preact-compat": "3.16.0",
       "prop-types": "15.5.10",
       "react": "15.5.4",
       "react-dom": "15.5.4",
-      "react-redux": "5.0.5",
+      "react-redux": "^5.0.5",
       "react-router-dom": "4.1.1",
-      "redux": "3.6.0",
+      "redux": "^3.6.0",
       "redux-thunk": "2.2.0",
       "webpack": "3.5.6",
       "webpack-dev-middleware": "1.10.2",
@@ -70,15 +69,12 @@ npm manifest:
       "eslint-config-prettier": "2.1.1",
       "eslint-config-react": "1.1.7",
       "eslint-loader": "1.7.1",
-      "eslint-plugin-flow": "2.29.1",
-      "eslint-plugin-flowtype": "2.33.0",
       "eslint-plugin-import": "2.3.0",
       "eslint-plugin-jsx-a11y": "5.0.3",
       "eslint-plugin-prettier": "2.1.1",
       "eslint-plugin-react": "7.0.1",
       "extract-text-webpack-plugin": "^2.1.2",
       "file-loader": "^1.1.11",
-      "flow-bin": "0.47.0",
       "html-loader": "^0.5.5",
       "image-webpack-loader": "^4.2.0",
       "jest": "20.0.4",
@@ -94,7 +90,7 @@ npm manifest:
       "svg-url-loader": "2.3.2",
       "uglifyjs-webpack-plugin": "^1.2.4",
       "url-loader": "1.0.1",
-      "webpack-dev-server": "2.8.2",
+      "webpack-dev-server": "2.8.2"
     },
     "name": "seed-react-stack-project",
     "version": "1.0.0",
@@ -112,10 +108,17 @@ Lockfile:
   No lockfile
 
 Trace: 
-  SyntaxError: c:\Users\talwa_000\Desktop\seed_projects\frontend\react\package.json: Unexpected token } in JSON at position 2544
-      at JSON.parse (<anonymous>)
-      at c:\Program Files (x86)\Yarn\lib\cli.js:1036:59
-      at Generator.next (<anonymous>)
-      at step (c:\Program Files (x86)\Yarn\lib\cli.js:98:30)
-      at c:\Program Files (x86)\Yarn\lib\cli.js:109:13
-      at <anonymous>
+  Error: Command failed.
+  Exit code: 1
+  Command: C:\Windows\system32\cmd.exe
+  Arguments: /d /s /c jest
+  Directory: C:\Users\talwa_000\Desktop\seed_projects\frontend\react_seed_project
+  Output:
+  
+      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
+      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
+      at emitTwo (events.js:126:13)
+      at ChildProcess.emit (events.js:214:7)
+      at maybeClose (internal/child_process.js:925:16)
+      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)

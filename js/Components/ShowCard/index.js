@@ -4,6 +4,7 @@ import { string } from 'prop-types';
 
 const ShowCard = props => (
   <div className="show-card">
+    test
     <img alt={`${props.title} Show Poster`} src={`/public/img/posters/${props.poster}`} />
     <div>
       <h1>testing</h1>

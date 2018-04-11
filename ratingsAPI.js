@@ -11,6 +11,10 @@ const ratedShows = showsObj.shows.map(show =>
   Object.assign({ rating: `${Math.floor(Math.random() * 9)}.${Math.floor(Math.random() * 9)}` }, show)
 );
 
+app.get('/all', (req,res) => {
+  res.status(200).json(showsObj);
+});
+
 app.get('/:id', (req, res) => {
   const show = ratedShows.find(item => item.imdbID === req.params.id);
   if (show) {
@@ -23,5 +27,4 @@ app.get('/:id', (req, res) => {
 });
 
 console.log(`Starting server on port 3000`);
-console.log(`Generating new random ratings`);
 app.listen(3000);
